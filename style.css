@@ -20,11 +20,22 @@ body{
     background-position: center;
 }
 
+/*----  Menu  ----*/
+
 header{
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    width: 100vw;
+    padding: 10px;
     font-size: 1.2rem;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.color{
+    background-color: #26252A;
+    color: #fff;
 }
 
 header .logo img{
@@ -74,6 +85,15 @@ nav button{
 }
 
 /*----- Texto principal ------*/
+
+.body-p1{
+    height: 100vh;
+    padding-top: 150px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+    padding-left: 80px;
+}
+
 .content{
     width: 350px;
     padding: 15px;
@@ -122,12 +142,14 @@ nav button{
     right: 100px;
     top: 150px;
 }
-footer{
+
+.btt-end{
     display: flex;
     justify-content: center;
+    z-index: 0;
 }
 
-footer button{
+.btt-end button{
     position: absolute;
     bottom: 25px;
     border: none;
@@ -142,8 +164,92 @@ footer button{
     text-align: center;
 }
 
-footer button span{
+.btt-end button span{
     position: relative;
     top: 4px;
     left: 5px;
+}
+
+
+/*---- Titulo Principal ----*/
+.center{
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+    padding-left: 80px;
+}
+
+.text-content{
+    font-size: 1.3rem;
+    margin: 50px;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+
+.text-content span{
+    margin: 10px;
+    font-family: 'Dela Gothic One', cursive;
+    text-transform: uppercase;
+    color: #C21818;
+    border-bottom: 4px dotted black;
+
+}
+
+/*---- Ofertas | Galeria de fotos ----*/
+
+.offers-galery{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-main{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;  
+    box-shadow: #C21818 5px 5px 1.5px;
+}
+
+.img-main .p1 {
+    border-radius: 0px 0px 0px 50px;
+}
+
+
+.img-main .p3 {
+    border-radius: 0px 50px 0px 0px;
+}
+
+.icon-add{
+    height: 40px;
+    cursor: pointer;
+}
+
+.info-add{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2px;
+}
+
+span.tamanho{
+    font-weight: bold;
+    color: #C21818;
+}
+
+.final{
+    position: absolute;
+    right: 5px;
+    bottom: 30px;
+}
+
+.icons-end{
+    height: 50px;
+    margin: 5px;
+}
+
+.body-p2{
+    height: 100vh;
 }
