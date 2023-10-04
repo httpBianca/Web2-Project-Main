@@ -52,8 +52,10 @@ header .logo h2{
 }
 
 nav{
-    display: flex
+    display: flex;
+    padding-right: 15px;
 }
+
 nav ul{
    display: flex;
 }
