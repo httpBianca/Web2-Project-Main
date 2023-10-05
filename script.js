@@ -1,5 +1,5 @@
 const header = document.querySelector('header');
-const btn = document.querySelector('button.top');
+const btn = document.querySelector('.top');
 
 function colorChange(){
     if (document.documentElement.scrollTop > 300) {
