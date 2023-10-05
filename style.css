@@ -1,28 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
-:root{
+:root {
     --color1: #26252A;
     --color2: #C21818;
 }
 
-body{
-    height: 100vh;
-    background-image: url('images/bg-main.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 
 /*----  Menu  ----*/
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     width: 100vw;
@@ -33,48 +26,48 @@ header{
     z-index: 1;
 }
 
-.color{
+.color {
     background-color: #26252A;
     color: #fff;
     transition: all 0.8s;
 
 }
 
-header .logo img{
+header .logo img {
     height: 80px;
 }
 
-header .logo{
-   display: flex;
+header .logo {
+    display: flex;
 }
 
-header .logo h2{
+header .logo h2 {
     position: relative;
     top: 20px;
 }
 
-nav{
+nav {
     display: flex;
     padding-right: 15px;
 }
 
-nav ul{
-   display: flex;
+nav ul {
+    display: flex;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
     cursor: pointer;
     margin: 30px;
 }
 
 nav ul li:first-child,
-nav ul li:hover{
+nav ul li:hover {
     color: var(--color2);
     border-bottom: 2px solid var(--color2);
 }
 
-nav button{
+nav button {
     position: relative;
     top: 25px;
     border: none;
@@ -90,44 +83,51 @@ nav button{
 
 /*----- Texto principal ------*/
 
-.body-p1{
+.body-p1 {
     height: 100vh;
+    background-image: url('images/bg-main.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding-top: 150px;
     padding-right: 30px;
     padding-bottom: 100px;
-    padding-left: 80px;
+    padding-left: 40px;
+
 }
 
-.content{
+.content {
     width: 350px;
     padding: 15px;
     margin: 80px;
 }
 
-.text h1{
+.text h1 {
     font-weight: 800;
     font-size: 3.6rem;
     line-height: 0.9;
 }
 
-.text b{
+.text b {
     margin: -5px;
     font-weight: 800;
     color: #C21818;
     font-size: 7.9rem;
 }
-.text span{
+
+.text span {
     margin-top: 10px;
     font-weight: 500;
     font-size: 1.2rem;
 }
-.text p{
+
+.text p {
     font-family: 'nunito', sans-serif;
     margin-top: 10px;
     width: 250px;
 }
 
-.content button{
+.content button {
     margin-top: 30px;
     border: none;
     height: 50px;
@@ -138,25 +138,26 @@ nav button{
     font-size: 1.3rem;
     cursor: pointer;
 }
-.content button:hover{
+
+.content button:hover {
     opacity: 0.9;
 }
 
 /*Imagem Principal*/
 
-.image-main img{
+.image-main img {
     position: absolute;
     right: 100px;
     top: 150px;
 }
 
-.btt-end{
+.btt-end {
     display: flex;
     justify-content: center;
     z-index: 0;
 }
 
-.btt-end button{
+.btt-end button {
     position: absolute;
     bottom: 25px;
     border: none;
@@ -171,7 +172,7 @@ nav button{
     text-align: center;
 }
 
-.btt-end button span{
+.btt-end button span {
     position: relative;
     top: 4px;
     left: 5px;
@@ -179,7 +180,7 @@ nav button{
 
 
 /*---- Titulo Principal ----*/
-.center{
+.center {
     display: flex;
     justify-content: center;
     padding-top: 150px;
@@ -188,13 +189,13 @@ nav button{
     padding-left: 80px;
 }
 
-.text-content{
+.text-content {
     font-size: 1.3rem;
     width: 270px;
     padding: 5px;
 }
 
-.text-content span{
+.text-content span {
     margin: 10px;
     font-family: 'Dela Gothic One', cursive;
     text-transform: uppercase;
@@ -205,57 +206,109 @@ nav button{
 
 /*---- Ofertas | Galeria de fotos ----*/
 
-.offers-galery{
+.offers-galery {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.img-main{
+.img-second {
     height: 200px;
     width: 200px;
-    object-fit: cover;  
+    object-fit: cover;
     box-shadow: #C21818 5px 5px 1.5px;
 }
 
-.img-main .p1 {
+.img-second .p1 {
     border-radius: 0px 0px 0px 50px;
 }
 
 
-.img-main .p3 {
+.img-second .p3 {
     border-radius: 0px 50px 0px 0px;
 }
 
-.icon-add{
+.icon-add {
     height: 40px;
     cursor: pointer;
 }
 
-.info-add{
+.info-add {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: 2px;
 }
 
-span.tamanho{
+span.tamanho {
     font-weight: bold;
     color: #C21818;
 }
 
-.final{
+.final {
     display: flex;
     justify-content: flex-end;
     margin-top: 150px;
 }
 
-.icons-end{
+.icons-end {
     height: 50px;
-    margin: 5px;
+    margin: 10px;
     cursor: pointer;
 }
 
-.body-p2{
+.body-p2 {
     height: 100vh;
 }
+
+@media screen and (max-width: 1226px) {
+    .content {
+        padding: 5px;
+        margin-left: 10px;
+    }
+    .image-main img {
+        position: absolute;
+        right: 0;
+        top: 150px;
+        height: 430px;
+    }
+
+    @media screen and (max-width: 830px) {
+        .text h1 {
+            font-size: 2.6rem;
+        }
+        .text b {
+            font-size: 5.9rem;
+        }
+        .text span {
+            font-size: 1rem;
+        }
+    }
+    @media screen and (max-width: 755px){
+        .image-main img {
+            top: 200px;
+            height: 300px;
+        }
+        .content {
+            padding-left: 40px;
+        }
+        .body-p1 {
+            background: #fff;
+        }
+        .offers-galery {
+            flex-direction: column;
+        }
+        .fotos {
+            margin-bottom: 25px;
+        }
+        nav ul,li {
+            display: none;
+        }
+        @media screen and (max-width: 613px){
+            .image-main img {
+                display: none;
+            }
+        }
+    }
+}
+
