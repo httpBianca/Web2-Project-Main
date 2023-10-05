@@ -36,6 +36,8 @@ header{
 .color{
     background-color: #26252A;
     color: #fff;
+    transition: all 0.8s;
+
 }
 
 header .logo img{
@@ -136,6 +138,9 @@ nav button{
     font-size: 1.3rem;
     cursor: pointer;
 }
+.content button:hover{
+    opacity: 0.9;
+}
 
 /*Imagem Principal*/
 
@@ -185,9 +190,7 @@ nav button{
 
 .text-content{
     font-size: 1.3rem;
-    margin: 50px;
-    width: 300px;
-    text-align: center;
+    width: 270px;
     padding: 5px;
 }
 
@@ -242,14 +245,15 @@ span.tamanho{
 }
 
 .final{
-    position: absolute;
-    right: 5px;
-    bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 150px;
 }
 
 .icons-end{
     height: 50px;
     margin: 5px;
+    cursor: pointer;
 }
 
 .body-p2{
