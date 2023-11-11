@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,7 +51,7 @@
         <div class="offers-galery" id="offers">
             <div class="fotos p1">
                 <img class="img-second" src="images/pexels-borbely-arpad-10790638.jpg" alt="calabresa">
-                <h2>Calabresa</h2>
+                <h2 class="name-info">Calabresa</h2>
                 <div class="info-add">
                     <span class="preco">R$ 19,90</span>
                     <span class="tamanho">M</span>
@@ -59,7 +60,7 @@
             </div>
             <div class="fotos p2">
                 <img class="img-second" src="images/pexels-valeria-boltneva-10875298.jpg" alt="portuguesa">
-                <h2>Portuguesa</h2>
+                <h2 class="name-info">Portuguesa</h2>
                 <div class="info-add">
                     <span class="preco">R$ 29,90</span>
                     <span class="tamanho">G</span>
@@ -68,7 +69,7 @@
             </div>
             <div class="fotos p3">
                 <img class="img-second" src="images/pexels-cats-coming-367915.jpg" alt="mussarela">
-                <h2>Mussarela</h2>
+                <h2 class="name-info">Mussarela</h2>
                 <div class="info-add">
                     <span class="preco">R$ 19,90</span>
                     <span class="tamanho">P</span>
@@ -77,10 +78,63 @@
             </div>
         </div>
         <div class="final">
-            <img class="icons-end" src="icons/1-removebg-preview.png" alt="">
+            <img class="icons-end cart-icon" src="icons/1-removebg-preview.png" alt="">
             <img class="icons-end top" src="icons/2-removebg-preview.png" alt="">
         </div>
     </main>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="container">
+                <div class="title-colunm">
+                    <h2>Carrinho de compras</h2>
+                    <span class="button">&times;</span>
+                </div>
+
+                <section class="container normal-section">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th class="table-head-item first-col">Item</th>
+                                <th class="table-head-item second-col">Preço</th>
+                                <th class="table-head-item third-col">Quantidade</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <!--
+                            <tr class="cart-product">
+                                <td class="product-identification">
+                                    <img src="images/pexels-borbely-arpad-10790638.jpg" alt="Poster 3"
+                                        class="cart-product-image">
+                                    <strong class="cart-product-title">Pizza</strong>
+                                </td>
+                                <td>
+                                    <span class="cart-product-price">R$19,90</span>
+                                </td>
+                                <td>
+                                    <input type="number" value="1" min="0" class="product-qtd-input">
+                                    <button type="button" class="remove-product-button">Remover</button>
+                                </td>
+                            </tr>
+                            -->
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="cart-total-container">
+                                    <strong>Total</strong>
+                                    <span>R$0,00</span>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <button type="button" class="purchase-button">Finalizar Compra</button>
+                </section>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
