@@ -467,5 +467,8 @@ span.button{
         .cart-product-image {
             display: none;
         }
+        .cart-product-title{
+            margin: 0;
+        }
     }
 }
